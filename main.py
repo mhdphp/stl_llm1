@@ -69,7 +69,8 @@ with col2:
 st.markdown("## Enter Your OpenAI API Key")
 
 def get_openai_api_key():
-    input_text = st.text_input(label="OpenAI API Key ",  placeholder="Ex: sk-2twmA8tfCb8un4...", key="openai_api_key_input", type="password")
+    input_text = st.text_input(label="OpenAI API Key ",  placeholder="Ex: sk-2twmA8tfCb8un4...", 
+                               key="openai_api_key_input", type="password")
     return input_text
 
 openai_api_key = get_openai_api_key()
@@ -79,7 +80,8 @@ openai_api_key = get_openai_api_key()
 st.markdown("## Enter the text you want to re-write")
 
 def get_draft():
-    draft_text = st.text_area(label="Text", label_visibility='collapsed', placeholder="Your Text...", key="draft_input")
+    draft_text = st.text_area(label="Text", label_visibility='collapsed', 
+                              placeholder="Your Text...", key="draft_input")
     return draft_text
 
 draft_input = get_draft()
